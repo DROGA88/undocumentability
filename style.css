@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>droga88</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <article class="post">
+    <video controls preload="none">
+      <source src="media/test.mp4" type="video/mp4">
+    </video>
+
+    <p>
+      Oaxaca — May 2026
+    </p>
+  </article>
+
+</body>
+
+</html>
