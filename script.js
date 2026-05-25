@@ -1,21 +1,55 @@
-var button = document.querySelector(".sound-toggle");
-var video = document.querySelector("video");
+var observer = new IntersectionObserver(function(entries) {
 
-button.addEventListener("click", function() {
+  entries.forEach(function(entry) {
 
-  if (video.muted) {
+    var video = entry.target;
 
-    video.muted = false;
-    video.volume = 1;
-    video.play();
+    if (entry.isIntersecting) {
 
-    button.textContent = "mute";
+      video.play();
 
-  } else {
+    } else {
 
-    video.muted = true;
+      video.pause();
 
-    button.textContent = "sound";
+    }
+
+  });
+
+}, {
+  threshold: 0.5
+});
+
+var posts = document.querySelectorAll(".post");
+
+posts.forEach(function(post) {
+
+  var button = post.querySelector(".sound-toggle");
+  var video = post.querySelector("video");
+
+  if (button && video) {
+	  
+	  observer.observe(video);
+
+    button.addEventListener("click", function() {
+
+      if (video.muted) {
+
+        video.muted = false;
+        video.volume = 1;
+        video.play();
+
+        button.textContent = "mute";
+
+      } else {
+
+        video.muted = true;
+
+        button.textContent = "sound";
+      }
+
+    });
+
   }
 
 });

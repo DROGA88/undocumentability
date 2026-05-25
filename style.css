@@ -46,3 +46,20 @@ p {
 
   z-index: 2;
 }
+
+img {
+  width: 100%;
+height: auto;
+  display: block;
+}
+
+audio {
+  position: absolute;
+
+  bottom: 12px;
+  left: 12px;
+
+  width: 120px;
+
+  z-index: 2;
+}
