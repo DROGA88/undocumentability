@@ -1,25 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: monospace;
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>droga88</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+.post {
+  width: 100%;
+  position: relative;
+}
 
-<body>
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-  <article class="post">
-    <video controls preload="none">
-      <source src="media/test.mp4" type="video/mp4">
-    </video>
+p {
+  position: absolute;
+  top: 12px;
+  left: 12px;
 
-    <p>
-      Oaxaca — May 2026
-    </p>
-  </article>
+  margin: 0;
 
-</body>
+  z-index: 2;
+}
 
-</html>
+.sound-toggle {
+  position: absolute;
+
+  bottom: 12px;
+  left: 12px;
+
+  background: rgba(0,0,0,0.6);
+  color: white;
+
+  border: 1px solid white;
+
+  font-family: monospace;
+  font-size: 12px;
+
+  padding: 4px 8px;
+
+  cursor: pointer;
+
+  z-index: 2;
+}
