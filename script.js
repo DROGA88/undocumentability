@@ -53,3 +53,15 @@ posts.forEach(function(post) {
   }
 
 });
+
+const siteTitle = document.querySelector(".site-title");
+const popup = document.getElementById("aboutPopup");
+const closePopup = document.getElementById("closePopup");
+
+siteTitle.addEventListener("click", () => {
+  popup.style.display = "block";
+});
+
+closePopup.addEventListener("click", () => {
+  popup.style.display = "none";
+});

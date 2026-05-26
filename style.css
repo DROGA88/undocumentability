@@ -84,3 +84,51 @@ audio {
 
   cursor: pointer;
 }
+
+.popup-window {
+  position: fixed;
+
+  top: 60px;
+  left: 12px;
+  right: 12px;
+
+  background: rgba(0,0,0,0.6);
+  color: white;
+
+  border: 1px solid white;
+
+  font-family: monospace;
+  font-size: 12px;
+
+  padding: 12px;
+
+  z-index: 1000;
+
+  display: none;
+}
+
+.popup-titlebar {
+  margin-bottom: 12px;
+
+  font-weight: bold;
+}
+
+.popup-content {
+  line-height: 1.5;
+}
+
+.popup-close {
+  margin-top: 12px;
+
+  background: rgba(0,0,0,0.6);
+  color: white;
+
+  border: 1px solid white;
+
+  font-family: monospace;
+  font-size: 12px;
+
+  padding: 4px 8px;
+
+  cursor: pointer;
+}
