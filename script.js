@@ -54,14 +54,14 @@ posts.forEach(function(post) {
 
 });
 
-const siteTitle = document.querySelector(".site-title");
-const popup = document.getElementById("aboutPopup");
-const closePopup = document.getElementById("closePopup");
+var siteTitle = document.querySelector(".site-title");
+var popup = document.getElementById("aboutPopup");
+var closePopup = document.getElementById("closePopup");
 
-siteTitle.addEventListener("click", () => {
+siteTitle.addEventListener("click", function() {
   popup.style.display = "block";
 });
 
-closePopup.addEventListener("click", () => {
+closePopup.addEventListener("click", function() {
   popup.style.display = "none";
 });
