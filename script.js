@@ -54,14 +54,66 @@ posts.forEach(function(post) {
 
 });
 
-var siteTitle = document.querySelector(".site-title");
-var popup = document.getElementById("aboutPopup");
-var closePopup = document.getElementById("closePopup");
 
-siteTitle.addEventListener("click", function() {
-  popup.style.display = "block";
+
+const audioButtons = document.querySelectorAll('.audio-player');
+
+audioButtons.forEach(audio => {
+
+  const post = audio.closest('.post');
+
+  const button = post.querySelector('.sound-toggle');
+
+  button.addEventListener('click', () => {
+
+    if (audio.paused) {
+
+      audio.play();
+      button.textContent = 'mute';
+
+    } else {
+
+      audio.pause();
+      button.textContent = 'sound';
+
+    }
+
+  });
+
 });
 
-closePopup.addEventListener("click", function() {
-  popup.style.display = "none";
+
+
+
+var siteTitle = document.querySelector(".site-title");
+var popup = document.getElementById("aboutPopup");
+
+siteTitle.addEventListener("click", function() {
+
+  if (popup.style.display === "block") {
+
+    popup.style.display = "none";
+
+  } else {
+
+    popup.style.display = "block";
+
+  }
+
+});
+
+const notesButtons = document.querySelectorAll('.notes-toggle');
+
+notesButtons.forEach(button => {
+
+  button.addEventListener('click', () => {
+
+    const post = button.closest('.post');
+
+    const popup = post.querySelector('.notes-popup');
+
+    popup.classList.toggle('active');
+
+  });
+
 });
