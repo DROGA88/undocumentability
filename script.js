@@ -117,3 +117,25 @@ notesButtons.forEach(button => {
   });
 
 });
+
+const closeButtons = document.querySelectorAll('.notes-close');
+
+closeButtons.forEach(button => {
+
+	button.addEventListener('click', () => {
+
+		const popup = button.closest('.notes-popup');
+
+		popup.classList.remove('active');
+
+	});
+
+});
+
+var closePopup = document.querySelector(".popup-close");
+
+closePopup.addEventListener("click", function() {
+
+	popup.style.display = "none";
+
+});
