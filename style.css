@@ -249,3 +249,19 @@ audio {
 	margin: 0 auto 12px auto;
 
 }
+
+.video-embed {
+
+	width: 100%;
+	margin: 12px 0;
+
+}
+
+.video-embed iframe {
+
+	width: 100%;
+	height: 240px; /* adjust depending on your popup size */
+
+	border: 0;
+
+}
