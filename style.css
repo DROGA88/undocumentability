@@ -81,7 +81,7 @@ audio {
   position: fixed;
 
   top: 12px;
-  right: -1px;
+  right: -3px;
 
   background: rgba(0,0,0,0.6);
   color: white;
@@ -178,7 +178,7 @@ audio {
   position: absolute;
 
  	top: 50%;
-	left: -1px;
+	left: -8px;
 
 	transform: translateY(-50%);
 
